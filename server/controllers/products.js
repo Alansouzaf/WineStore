@@ -1,5 +1,6 @@
 const products = require('../db_apis/products.js');
 
+<<<<<<< HEAD
 async function get(req, res, next) {
   try {
     const productget = {};
@@ -7,6 +8,16 @@ async function get(req, res, next) {
     productget.id = parseInt(req.params.id, 10);
 
     const rows = await products.find(productget);
+=======
+
+async function get(req, res, next) {
+  try {
+    const context = {};
+
+    context.id = parseInt(req.params.id, 10);
+
+    const rows = await products.find(context);
+>>>>>>> ffdb430140e5c1b00864bfc0f94cb8b1643730c6
 
     if (req.params.id) {
       if (rows.length === 1) {
@@ -22,4 +33,8 @@ async function get(req, res, next) {
   }
 }
 
+<<<<<<< HEAD
 module.exports.get = get;
+=======
+module.exports.get = get;
+>>>>>>> ffdb430140e5c1b00864bfc0f94cb8b1643730c6

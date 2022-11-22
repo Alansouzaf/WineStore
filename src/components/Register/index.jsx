@@ -6,6 +6,10 @@ var nomefinal = "";
 var cpffinal = "";
 var emailfinal = "";
 var passfinal="";
+<<<<<<< HEAD
+=======
+var datefinal="";
+>>>>>>> ffdb430140e5c1b00864bfc0f94cb8b1643730c6
 function registerCustomer ()
 {
     console.log(nomefinal);
@@ -23,7 +27,11 @@ function registerCustomer ()
     cpf: cpffinal,
     nome: nomefinal,
     email: emailfinal,
+<<<<<<< HEAD
     pass: passfinal
+=======
+    pass: passfinal,
+>>>>>>> ffdb430140e5c1b00864bfc0f94cb8b1643730c6
   })
 })
 }
@@ -38,6 +46,12 @@ const handleInputChange = (e) => {
   if(id === "email"){
     emailfinal=value;
   }
+<<<<<<< HEAD
+=======
+  if(id === "pass"){
+    passfinal=value;
+  }
+>>>>>>> ffdb430140e5c1b00864bfc0f94cb8b1643730c6
 }
 
 function Register() {
@@ -62,10 +76,21 @@ function Register() {
           <label>
             Nome completo
             <input type="text" id="nome" onChange = {(e) => handleInputChange(e)}/>
+<<<<<<< HEAD
           </label>
           <label>
             Senha
             <input type="password"  id="sobrenome" onChange = {(e) => handleInputChange(e)} />
+=======
+          </label>
+          <label>
+            Data de nascimento
+            <input type="date" id="borndate" onChange = {(e) => handleInputChange(e)}/>
+          </label>
+          <label>
+            Senha
+            <input type="password"  id="pass" onChange = {(e) => handleInputChange(e)} />
+>>>>>>> ffdb430140e5c1b00864bfc0f94cb8b1643730c6
           </label>
           <label>
             Confirmar Senha

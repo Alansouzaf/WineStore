@@ -2,7 +2,11 @@ const oracledb = require('oracledb');
 const database = require('../services/database.js');
 
 const baseQuery =
+<<<<<<< HEAD
  `SELECT CD_CLIENTE "id",NOME "nome",CPF "CPF",TELEFONE "Phone", EMAIL "mail", pass "pass" FROM CLIENTE`;
+=======
+ `SELECT CD_CLIENTE "id",NOME "nome",CPF "CPF", dt_nascimento, TELEFONE "Phone", EMAIL "mail", pass "pass" FROM CLIENTE`;
+>>>>>>> ffdb430140e5c1b00864bfc0f94cb8b1643730c6
 
 async function find(context) {
   let query = baseQuery;
@@ -23,7 +27,11 @@ module.exports.find = find;
 
 const createSql =
  `insert into cliente (
+<<<<<<< HEAD
      cd_cliente, NOME,CPF,EMAIL, pass
+=======
+     cd_cliente, NOME,CPF, EMAIL, pass
+>>>>>>> ffdb430140e5c1b00864bfc0f94cb8b1643730c6
   ) values (:cli_id,
     :nome,
     :cpf,

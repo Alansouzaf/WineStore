@@ -15,7 +15,11 @@ router.route('/register/:id?')
   .post(register.post);
 
   router.route('/login/:id?')
+<<<<<<< HEAD
   .get(login.get)
+=======
+  .get(login.get);
+>>>>>>> ffdb430140e5c1b00864bfc0f94cb8b1643730c6
   //.post(login.post); 
   
 

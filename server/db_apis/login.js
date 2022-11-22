@@ -9,7 +9,11 @@ async function find(context) {
   const binds = {};
 
   if (context.id) {
+<<<<<<< HEAD
     binds.cpf = context.id;
+=======
+    binds.cd_tipo = context.id;
+>>>>>>> ffdb430140e5c1b00864bfc0f94cb8b1643730c6
 
     query += `\nwhere cpf = :cpf`;
   }
